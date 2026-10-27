@@ -1,0 +1,32 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.home__main {
+  flex: 1;
+  /* .container only caps the width; without this the flex column shrinks <main> to its content,
+     collapsing the carousels' percentage-based columns */
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+
+.home__greeting {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.home__footer {
+  border-top: 1px solid var(--color-border-light);
+  background: var(--color-bg-soft);
+  padding: 20px 0;
+}
+
+.home__footer p {
+  font-size: 13px;
+  color: var(--color-text-light);
+  text-align: center;
+}
